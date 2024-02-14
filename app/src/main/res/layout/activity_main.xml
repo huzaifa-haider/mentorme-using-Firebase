@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#C1E2F1">
+
+
+
+    <ImageView
+        android:id="@+id/image_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-9dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/semicircle"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="320dp"
+        android:id="@+id/linear_1"
+        >
+
+        <TextView
+            android:id="@+id/textViewRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:text="mentor"
+            android:textColor="#0896A8"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            /> <!-- Set color for first half -->
+
+        <TextView
+            android:id="@+id/textViewBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="me"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:textColor="#EABA2B" /> <!-- Set color for second half -->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="connet. ask. learn."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginTop="370dp"
+        android:textColor="#00BCD4"
+        />
+
+</RelativeLayout>

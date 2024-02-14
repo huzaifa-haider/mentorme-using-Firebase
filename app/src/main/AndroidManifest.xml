@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.I210784"
+        tools:targetApi="31">
+        <activity
+            android:name=".audio_call"
+            android:exported="false" />
+        <activity
+            android:name=".video_call"
+            android:exported="false" />
+        <activity
+            android:name=".video"
+            android:exported="false" />
+        <activity
+            android:name=".photo"
+            android:exported="false" />
+        <activity
+            android:name=".john_community"
+            android:exported="false" />
+        <activity
+            android:name=".john_cooper_chat"
+            android:exported="false" />
+        <activity
+            android:name=".chats"
+            android:exported="false" />
+        <activity
+            android:name=".book_session"
+            android:exported="false" />
+        <activity
+            android:name=".add_mentor"
+            android:exported="false" />
+        <activity
+            android:name=".dropReview"
+            android:exported="false" />
+        <activity
+            android:name=".johnCooper"
+            android:exported="false" />
+        <activity
+            android:name=".searchResult"
+            android:exported="false" />
+        <activity
+            android:name=".search"
+            android:exported="false" />
+        <activity
+            android:name=".homePage"
+            android:exported="false" />
+        <activity
+            android:name=".resetPass"
+            android:exported="false" />
+        <activity
+            android:name=".forgetPass"
+            android:exported="false" />
+
+        <receiver
+            android:name=".cross_sign"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/cross_sign_info" />
+        </receiver>
+
+        <activity
+            android:name=".verify"
+            android:exported="false" />
+        <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

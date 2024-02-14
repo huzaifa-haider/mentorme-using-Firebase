@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chats"
+    android:background="#C1E2F1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        >
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back_arrow"
+            app:tint="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chats"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Community"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/john"
+            app:civ_border_width="5dp"
+            app:civ_border_color="#FFEB3B"
+            />
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/john"
+                app:civ_border_width="5dp"
+                android:layout_marginLeft="5dp"
+
+                app:civ_border_color="#FFEB3B"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/john"
+                app:civ_border_width="5dp"
+                app:civ_border_color="#FFEB3B"
+                android:layout_marginLeft="5dp"
+
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/john"
+                app:civ_border_width="5dp"
+                app:civ_border_color="#FFEB3B"
+                android:layout_marginLeft="5dp"
+
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/john"
+                app:civ_border_width="5dp"
+                android:layout_marginLeft="5dp"
+                app:civ_border_color="#FFEB3B"
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All Messages"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/john"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="John Cooper"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="1 New Message"
+                    android:textColor="#E91E63"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorIconSecondary"
+            android:layout_marginTop="5dp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jack"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Jack Watson"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="No New Messages"
+                    android:textColor="@color/colorIconSecondary"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorIconSecondary"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/emma"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="John Cooper"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="No New Messages"
+                    android:textColor="@color/colorIconSecondary"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/home_icon"
+            app:tint="@color/colorIconSecondary"
+            />
+
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/search_icon"
+            app:tint="@color/colorIconSecondary"
+            />
+        <ImageView
+            android:id="@+id/chat_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp"
+            android:src="@drawable/chat_icon"
+            app:tint="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/people"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/home_icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@+id/nav_bar"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/search_icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="@color/colorIconSecondary"
+        android:layout_alignBottom="@+id/nav_bar"
+        android:layout_toRightOf="@+id/home_icon_text"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/chat_icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chats"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@+id/nav_bar"
+        android:layout_toRightOf="@+id/search_icon_text"
+        android:layout_marginLeft="118dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/people_icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="People"
+        android:textColor="@color/colorIconSecondary"
+        android:layout_alignBottom="@+id/nav_bar"
+        android:layout_toRightOf="@+id/chat_icon_text"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="5dp"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/add_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/add_icon"
+        android:layout_alignParentBottom="true"
+        app:civ_border_width="10dp"
+        app:civ_border_color="@color/colorPrimaryDark"
+        android:background="@drawable/add_icon"
+        android:layout_marginBottom="40dp"
+        android:layout_centerInParent="true"
+        />
+
+
+
+
+
+
+</RelativeLayout>

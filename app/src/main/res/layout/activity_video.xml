@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".video"
+    android:orientation="vertical"
+    android:background="#C1E2F1"
+
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="horizontal"
+        android:background="@color/colorIconSecondary"
+        android:paddingTop="10dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clear_icon"
+            app:tint="@color/black"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HDR"
+            android:textStyle="bold"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="100dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/light"
+            app:tint="@color/black"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Portrait"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slo-mo"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:backgroundTint="@color/light_blue_200"
+            android:background="@drawable/rounded_edittext_background"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Square"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/image_circular"
+            app:civ_border_width="10dp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/circle_white"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            app:civ_border_width="5dp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/video_circular"
+            app:civ_border_width="10dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@android:color/transparent" /> <!-- Set the circle color to transparent -->
+    <stroke
+        android:width="2dp"
+    android:color="#458F98" />
+
+</shape>

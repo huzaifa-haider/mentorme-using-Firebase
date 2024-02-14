@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".video_call"
+    android:background="#C1E2F1"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:background="@color/colorIconSecondary"
+        android:paddingTop="50dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="50:08"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/rounded_edittext_background"
+            android:layout_gravity="right"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="20dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:layout_height="5dp"
+        android:background="@color/colorIconSecondary"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/circle_filled"
+                app:tint="@color/colorPrimaryDark"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/mic_off"
+                android:layout_centerInParent="true"
+                app:tint="@color/white"
+                ></ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/circle_filled"
+                app:tint="@color/colorPrimaryDark"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/no_video"
+                android:layout_centerInParent="true"
+                app:tint="@color/white"
+                ></ImageView>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/rotate"
+            android:layout_marginRight="30dp"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/cancel_call"
+            app:civ_border_width="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

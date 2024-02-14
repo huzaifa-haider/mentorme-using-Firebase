@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search"
+    android:background="@color/colorBackground"
+    >
+
+    <ImageView
+        android:id="@+id/image_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-9dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/semicircle"
+        />
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back_arrow"
+        />
+    <TextView
+        android:id="@+id/find_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Let's Find..."
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/back_icon"
+        />
+    <EditText
+        android:id="@+id/find_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:hint="           Search"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_below="@+id/find_text"
+        />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/find_text"
+        android:src="@drawable/search_icon"
+        app:tint="@color/colorPrimaryDark"
+        android:layout_marginTop="5dp"
+        />
+    <LinearLayout
+        android:id="@+id/recent_searches_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/find_edit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Searches"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="right"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mentor 1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mentor 2"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mentor 3"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recent_searches_layout"
+        android:background="@drawable/btn_background"
+        android:backgroundTint="#8FE1D7"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse Catagories"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/entrep"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#000"
+                app:civ_circle_background_color="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entrepreneurship"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_outward"
+                android:layout_marginLeft="130dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/p_growth"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#000"
+                app:civ_circle_background_color="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Growth"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_outward"
+                android:layout_marginLeft="140dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edu"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#000"
+                app:civ_circle_background_color="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_outward"
+                android:layout_marginLeft="120dp"
+                android:paddingLeft="80dp"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/home_icon"
+            app:tint="@color/colorIconSecondary"
+            />
+
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/search_icon"
+            app:tint="@color/white"
+            />
+        <ImageView
+            android:id="@+id/chat_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp"
+            android:src="@drawable/chat_icon"
+            />
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/people"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/home_icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textColor="@color/colorIconSecondary"
+        android:layout_alignBottom="@+id/nav_bar"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/search_icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@+id/nav_bar"
+        android:layout_toRightOf="@+id/home_icon_text"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/chat_icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chats"
+        android:textColor="@color/colorIconSecondary"
+        android:layout_alignBottom="@+id/nav_bar"
+        android:layout_toRightOf="@+id/search_icon_text"
+        android:layout_marginLeft="118dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/people_icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="People"
+        android:textColor="@color/colorIconSecondary"
+        android:layout_alignBottom="@+id/nav_bar"
+        android:layout_toRightOf="@+id/chat_icon_text"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="5dp"
+        />
+    <ImageView
+        android:id="@+id/add_dot"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/circle_add_bg"
+        android:layout_marginLeft="155dp"
+        android:layout_marginBottom="20dp"
+        />
+    <ImageView
+        android:id="@+id/add_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/add_icon"
+        android:layout_marginLeft="175dp"
+        android:layout_marginBottom="40dp"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
