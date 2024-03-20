@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <padding android:bottom="8dp" /> <!-- Adjust padding as needed for your shadow -->
+    <solid android:color="#DADADA"/> <!-- Color of the shadow -->
+    <corners android:radius="8dp"/> <!-- Adjust corner radius as needed -->
+</shape>

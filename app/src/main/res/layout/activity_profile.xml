@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    >
+
+    <LinearLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        >
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back_arrow"
+            app:tint="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            />
+        <ImageView
+            android:id="@+id/more_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more_horizental"
+            app:tint="@color/colorPrimaryDark"
+            android:gravity="right"
+            android:layout_marginLeft="150dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_below="@+id/first_layout"
+        android:id="@+id/image_frame"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/img_frame"
+        />
+    <LinearLayout
+        android:id="@+id/second_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@+id/image_frame"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/default_dp"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="5dp"
+            app:civ_circle_background_color="@color/black"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/edit_dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/edit_profile_icon"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="-30dp"
+            app:civ_border_width="10dp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_circle_background_color="@color/colorPrimaryDark"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/edit_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/edit_profile_icon"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="230dp"
+            app:civ_border_width="10dp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_circle_background_color="@color/colorPrimaryDark"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_layout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_layout"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALi"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location_icon"
+                app:tint="@color/colorIconSecondary"
+                />
+            <TextView
+                android:id="@+id/location_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Islamabad"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/booked_session"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFEB3B"
+        android:text="Booked Sessions"
+        android:layout_gravity="center"
+        android:layout_below="@+id/third_layout"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        />
+
+
+
+
+</RelativeLayout>
