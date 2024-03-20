@@ -2,12 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".verify"
     android:orientation="vertical"
     android:weightSum="7"
     >
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -49,40 +52,90 @@
             android:gravity="center"
             >
 
+            <EditText
+                android:id="@+id/digit_1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:layout_marginRight="5dp"
+                android:textColor="#458F98"
 
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/circle"
+
+                />
+            <EditText
+                android:id="@+id/digit_2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:layout_marginRight="5dp"
+                android:textColor="#458F98"
+
+
+                />
+            <EditText
+                android:id="@+id/digit_3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:layout_marginRight="5dp"
+                android:textColor="#458F98"
+
+
+
+                />
+            <EditText
+                android:id="@+id/digit_4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:layout_marginRight="5dp"
+                android:textColor="#458F98"
+
+
+                />
+            <EditText
+                android:id="@+id/digit_5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:layout_marginRight="5dp"
+                android:textColor="#458F98"
+
+                />
+            <EditText
+                android:id="@+id/digit_6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textColor="#458F98"
+
+
                 />
 
-            <ImageView
-                android:layout_marginLeft="10dp"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/circle"
-                />
-
-            <ImageView
-                android:layout_marginLeft="10dp"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/circle"
-                />
-
-            <ImageView
-                android:layout_marginLeft="10dp"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/circle"
-                />
-
-            <ImageView
-                android:layout_marginLeft="10dp"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/circle"
-                />
 
         </LinearLayout>
 
@@ -135,6 +188,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/num_1"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="30dp"
@@ -149,6 +203,7 @@
                 android:textColor="@color/white"
                 />
             <TextView
+                android:id="@+id/num_2"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="30dp"
@@ -163,6 +218,7 @@
                 android:textColor="@color/white"
                 />
             <TextView
+                android:id="@+id/num_3"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="30dp"
@@ -183,6 +239,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/num_4"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="30dp"
@@ -196,6 +253,7 @@
                 android:textColor="@color/white"
                 />
             <TextView
+                android:id="@+id/num_5"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="30dp"
@@ -209,6 +267,8 @@
                 android:textColor="@color/white"
                 />
             <TextView
+                android:id="@+id/num_6"
+
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="30dp"
@@ -228,6 +288,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/num_7"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="30dp"
@@ -241,6 +302,7 @@
                 android:textColor="@color/white"
                 />
             <TextView
+                android:id="@+id/num_8"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="30dp"
@@ -254,6 +316,7 @@
                 android:textColor="@color/white"
                 />
             <TextView
+                android:id="@+id/num_9"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="30dp"
@@ -273,9 +336,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
-
-
             <TextView
+                android:id="@+id/num_0"
                 android:layout_marginLeft="160dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="30dp"
@@ -289,12 +351,12 @@
                 android:textColor="@color/white"
                 />
             <ImageView
+                android:id="@+id/num_back"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="50dp"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@drawable/backspace"
-
                 />
         </LinearLayout>
 
@@ -304,7 +366,6 @@
 
 
     </LinearLayout>
-
 
 
 </LinearLayout>

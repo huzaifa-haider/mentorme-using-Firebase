@@ -365,8 +365,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
-            android:src="@drawable/people"
-            />
+            android:src="@drawable/people" />
 
     </LinearLayout>
 
@@ -376,7 +375,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Home"
-        android:textColor="@color/white"
+        android:textColor="@color/colorIconSecondary"
         android:layout_alignBottom="@+id/nav_bar"
         android:layout_marginLeft="28dp"
         android:layout_marginBottom="5dp"
@@ -398,7 +397,7 @@
         android:id="@+id/chat_icon_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chats"
+        android:text="Chat"
         android:textColor="@color/white"
         android:layout_alignBottom="@+id/nav_bar"
         android:layout_toRightOf="@+id/search_icon_text"
@@ -407,14 +406,14 @@
         />
 
     <TextView
-        android:id="@+id/people_icon_text"
+        android:id="@+id/profile_icon_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="People"
+        android:text="Profile"
         android:textColor="@color/colorIconSecondary"
         android:layout_alignBottom="@+id/nav_bar"
         android:layout_toRightOf="@+id/chat_icon_text"
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="35dp"
         android:layout_marginBottom="5dp"
         />
     <de.hdodenhof.circleimageview.CircleImageView

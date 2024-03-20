@@ -8,7 +8,7 @@
     android:background="#C1E2F1"
     >
     <ImageView
-        android:id="@+id/back_icon"
+        android:id="@+id/back_arrow"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="30dp"
         android:layout_width="40dp"
@@ -57,69 +57,73 @@
         android:textAlignment="viewEnd"
         />
 </LinearLayout>
+
+
     <LinearLayout
+        android:id="@+id/linear_2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:id="@+id/linear_2"
+        android:layout_below="@+id/add_text"
+        android:layout_marginTop="8dp"
         android:background="@drawable/top_corner_bg"
         android:backgroundTint="#50C2C9"
-        android:layout_below="@+id/add_text"
-        android:paddingTop="20dp"
-        >
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:gravity="center"
-            >
+            android:orientation="horizontal">
+
             <LinearLayout
+                android:id="@+id/upload_video_layout"
                 android:layout_width="120dp"
                 android:layout_height="80dp"
-                android:orientation="vertical"
                 android:background="@color/white"
-                android:paddingTop="20dp"
-                >
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/camera"
-                    />
+                    android:src="@drawable/camera" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Upload Video"
-                    android:textStyle="bold"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimaryDark"
-                    />
+                    android:textStyle="bold" />
 
 
             </LinearLayout>
+
             <LinearLayout
+
+                android:id="@+id/upload_photo_layout"
                 android:layout_width="120dp"
                 android:layout_height="80dp"
-                android:orientation="vertical"
-                android:background="@color/white"
-                android:paddingTop="20dp"
                 android:layout_marginLeft="30dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
 
                 >
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/photo_camera"
-                    />
+                    android:src="@drawable/photo_camera" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Upload Video"
-                    android:textStyle="bold"
+                    android:text="Upload Photo"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimaryDark"
-                    />
+                    android:textStyle="bold" />
 
 
             </LinearLayout>
@@ -129,84 +133,81 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name"
-            android:textSize="20sp"
-            android:textColor="@color/white"
             android:layout_marginLeft="20dp"
-            />
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_edittext_background"
             android:hint="  Enter Name"
             android:maxLines="1"
             android:textColor="@android:color/black"
             android:textSize="16sp"
-            android:background="@drawable/rounded_edittext_background"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
 
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Description"
-            android:textSize="20sp"
-            android:textColor="@color/white"
             android:layout_marginLeft="20dp"
-            />
+            android:text="Description"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_edittext_background"
             android:hint="  Enter Description"
             android:maxLines="1"
             android:textColor="@android:color/black"
             android:textSize="16sp"
-            android:background="@drawable/rounded_edittext_background"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
 
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Status"
-            android:textSize="20sp"
-            android:textColor="@color/white"
             android:layout_marginLeft="20dp"
-            />
+            android:text="Status"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_edittext_background"
             android:hint="  Available"
             android:maxLines="1"
             android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:background="@drawable/rounded_edittext_background"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            />
+            android:textSize="16sp" />
 
 
         <TextView
             android:id="@+id/upload"
             android:layout_width="350dp"
             android:layout_height="80dp"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_edittext_background"
             android:backgroundTint="@color/colorPrimaryDark"
+            android:paddingTop="25dp"
             android:text="Upload"
-            android:textSize="20dp"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            android:paddingTop="25dp"
-            android:layout_gravity="center"
-            />
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
-
 
     <LinearLayout
         android:id="@+id/nav_bar"
@@ -282,7 +283,7 @@
         android:id="@+id/chat_icon_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Search"
+        android:text="Chat"
         android:textColor="@color/colorIconSecondary"
         android:layout_alignBottom="@+id/nav_bar"
         android:layout_toRightOf="@+id/search_icon_text"
@@ -294,7 +295,7 @@
         android:id="@+id/people_icon_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="People"
+        android:text="Profile"
         android:textColor="@color/colorIconSecondary"
         android:layout_alignBottom="@+id/nav_bar"
         android:layout_toRightOf="@+id/chat_icon_text"

@@ -6,10 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".book_session"
     android:background="#C1E2F1"
-    
-    
     >
-
     <LinearLayout
         android:id="@+id/top_layout"
         android:layout_width="match_parent"
