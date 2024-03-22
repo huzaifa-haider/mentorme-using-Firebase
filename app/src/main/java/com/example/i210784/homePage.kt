@@ -3,6 +3,7 @@ package com.example.i210784
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -11,6 +12,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.database
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
@@ -29,37 +31,32 @@ class homePage : AppCompatActivity() {
 
 
 
-        //for data reading from database
-//
-
-        val database = com.google.firebase.ktx.Firebase.database
+        val database = com.google.firebase.Firebase.database
+        val auth = FirebaseAuth.getInstance()
+        val currentUserId = auth.currentUser?.uid
         val myRef = database.getReference("userInfo")
-        myRef.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                val user = dataSnapshot.getValue(Model::class.java)
-                name.setText(user?.name)
-            }
-            override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(this@homePage, "Failed to read value", Toast.LENGTH_LONG).show()
-            }
-        })
 
-//        val database = Firebase.database
-//        val myRef = database.getReference("name")
-//        myRef.addValueEventListener(object : ValueEventListener {
-//
-//            override fun onDataChange(dataSnapshot: DataSnapshot) {
-//                val value = dataSnapshot.getValue(String::class.java)
-//                name.setText(value)
-//            }
-//
-//            override fun onCancelled(error: DatabaseError) {
-//                Toast.makeText(this@homePage, "Failed to read value", Toast.LENGTH_LONG).show()
-//            }
-//
-//        })
+        currentUserId?.let { userId ->
+            val userQuery = myRef.orderByChild("userID").equalTo(userId)
+            userQuery.addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    for (snapshot in dataSnapshot.children) {
+                        val userInfo = snapshot.getValue(Model::class.java)
+                        if (userInfo != null) {
+                            // Update UI with user info
+                            name.setText(userInfo.name)
+                        } else {
+                            // Handle case when user info is null
+                        }
+                    }
+                }
 
-
+                override fun onCancelled(error: DatabaseError) {
+                    // Handle error
+                    Toast.makeText(this@homePage, "Failed to read value", Toast.LENGTH_LONG).show()
+                }
+            })
+        }
 
 
 

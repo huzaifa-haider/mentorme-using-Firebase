@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.LinearLayout
 
 class chats : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +15,14 @@ class chats : AppCompatActivity() {
         var chat=findViewById<ImageView>(R.id.chat_icon)
         var home=findViewById<ImageView>(R.id.home_icon)
         var add=findViewById<de.hdodenhof.circleimageview.CircleImageView>(R.id.add_icon)
+        var johnCooper_chat=findViewById<LinearLayout>(R.id.john_cooper_chat)
+
+        johnCooper_chat.setOnClickListener {
+            startActivity(
+                Intent(this,john_cooper_chat::class.java)
+            );
+        }
+
 
 
         chat.setOnClickListener {

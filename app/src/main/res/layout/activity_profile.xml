@@ -73,7 +73,7 @@
             app:civ_circle_background_color="@color/black"
             />
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/edit_dp"
+            android:id="@+id/edit_profile"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/edit_profile_icon"
@@ -84,7 +84,7 @@
             app:civ_circle_background_color="@color/colorPrimaryDark"
             />
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/edit_profile"
+            android:id="@+id/edit_dp_cover"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/edit_profile_icon"

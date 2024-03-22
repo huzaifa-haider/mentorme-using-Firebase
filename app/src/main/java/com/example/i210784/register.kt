@@ -3,6 +3,7 @@ package com.example.i210784
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -28,28 +29,35 @@ class register : AppCompatActivity() {
         var myAuth= FirebaseAuth.getInstance();
 
 
-        signUp.setOnClickListener {
-            var model=Model(name.text.toString(),email.text.toString(),contact.text.toString(),country.text.toString(),city.text.toString(),"")
-            var db= Firebase.database.getReference("userInfo")
-            db.push().setValue(model)
-                //db.setValue(model)
-                .addOnSuccessListener {
-                    Toast.makeText(this,"Successfully Created",Toast.LENGTH_LONG).show()
-                    //finish()
-                }
-                .addOnFailureListener {
-                    Toast.makeText(this,"Failed to Add", Toast.LENGTH_LONG).show()
-                }
 
+        signUp.setOnClickListener {
 
             myAuth.createUserWithEmailAndPassword(email.text.toString(),pass.text.toString())
                 .addOnSuccessListener{
+                    val currentUserId = myAuth.currentUser?.uid
+
+                    var model=Model(currentUserId.toString(),name.text.toString(),email.text.toString(),contact.text.toString(),country.text.toString(),city.text.toString(),"")
+                    var db= Firebase.database.getReference("userInfo")
+                    db.push().setValue(model)
+                        //db.setValue(model)
+                        .addOnSuccessListener {
+                            Toast.makeText(this,"Successfully Created",Toast.LENGTH_LONG).show()
+                            //finish()
+                        }
+                        .addOnFailureListener {
+                            Toast.makeText(this,"Failed to Add", Toast.LENGTH_LONG).show()
+                        }
+
                     startActivity(Intent(this,login::class.java))
                     finish();
                 }
                 .addOnFailureListener{
                     Toast.makeText(this@register, "Failed to Signup", Toast.LENGTH_SHORT).show()
                 }
+
+
+
+
 
         }
 

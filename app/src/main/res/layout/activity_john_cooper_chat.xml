@@ -56,216 +56,294 @@
                 />
 
     </LinearLayout>
-
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"
         android:layout_below="@+id/top_layout"
-        android:orientation="vertical"
-        >
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="70dp"/>
+        android:layout_above="@+id/chatBar"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:text="Hello, You there?"
-            android:background="@drawable/home_mentor_bg"
-            android:backgroundTint="@color/colorPrimary"
-            android:padding="5dp"
-            android:layout_marginRight="10dp"
-            android:layout_gravity="right"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:text="10:30"
-            android:textSize="12sp"
-            android:padding="2dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="10dp"
-            android:textColor="@color/colorIconSecondary"
-            android:layout_gravity="right"
-            />
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    >
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/john"
-        android:layout_marginLeft="10dp"
         />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="10dp"
-        android:paddingTop="20dp"
-        >
 
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="35dp"
-            android:text="Yes"
-            android:background="@drawable/home_mentor_bg"
-            android:backgroundTint="@color/white"
-            android:padding="5dp"
-            android:textAlignment="center"
-            android:layout_marginRight="10dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:text="10:31"
-            android:textSize="12sp"
-            android:padding="2dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="10dp"
-            android:textColor="@color/colorIconSecondary"
-            android:layout_gravity="left"
-            />
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/top_layout"-->
+<!--        android:orientation="vertical"-->
+<!--        >-->
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="70dp"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:text="Hello, You there?"-->
+<!--            android:background="@drawable/home_mentor_bg"-->
+<!--            android:backgroundTint="@color/colorPrimary"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_gravity="right"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:text="10:30"-->
+<!--            android:textSize="12sp"-->
+<!--            android:padding="2dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:textColor="@color/colorIconSecondary"-->
+<!--            android:layout_gravity="right"-->
+<!--            />-->
+<!--<LinearLayout-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="horizontal"-->
+<!--    >-->
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/john"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        />-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:paddingTop="20dp"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:text="Yes"-->
+<!--            android:background="@drawable/home_mentor_bg"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:padding="5dp"-->
+<!--            android:textAlignment="center"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:text="10:31"-->
+<!--            android:textSize="12sp"-->
+<!--            android:padding="2dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:textColor="@color/colorIconSecondary"-->
+<!--            android:layout_gravity="left"-->
+<!--            />-->
 
 
-    </LinearLayout>
+<!--    </LinearLayout>-->
 
 
 
-</LinearLayout>
+<!--</LinearLayout>-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:text="I need your guidance"
-            android:background="@drawable/home_mentor_bg"
-            android:backgroundTint="@color/colorPrimary"
-            android:padding="5dp"
-            android:layout_marginRight="10dp"
-            android:layout_gravity="right"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:text="10:30"
-            android:textSize="12sp"
-            android:padding="2dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="10dp"
-            android:textColor="@color/colorIconSecondary"
-            android:layout_gravity="right"
-            />
+<!--        <TextView-->
+<!--            android:id="@+id/sender_tv"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:text="I need your guidance"-->
+<!--            android:background="@drawable/home_mentor_bg"-->
+<!--            android:backgroundTint="@color/colorPrimary"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_gravity="right"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:text="10:30"-->
+<!--            android:textSize="12sp"-->
+<!--            android:padding="2dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:textColor="@color/colorIconSecondary"-->
+<!--            android:layout_gravity="right"-->
+<!--            />-->
 
-        <LinearLayout
-            android:id="@+id/john_bottom_layout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/john"
-                android:layout_marginLeft="10dp"
-                />
+<!--        <LinearLayout-->
+<!--            android:id="@+id/john_bottom_layout"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            >-->
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/john"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:paddingTop="20dp"-->
+<!--                >-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/receiver_tv"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:text="How can I help you?"-->
+<!--                    android:background="@drawable/home_mentor_bg"-->
+<!--                    android:backgroundTint="@color/white"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:text="10:33"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:padding="2dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:textColor="@color/colorIconSecondary"-->
+<!--                    android:layout_gravity="left"-->
+<!--                    />-->
+
+
+<!--            </LinearLayout>-->
+
+
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:background="@drawable/rounded_edittext_background"-->
+<!--            android:backgroundTint="@color/colorPrimary"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:paddingTop="15dp"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/attach_file"-->
+<!--                app:tint="@color/white"-->
+<!--                />-->
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/attach_photo"-->
+<!--                app:tint="@color/white"-->
+<!--                />-->
+<!--            <EditText-->
+<!--                android:id="@+id/messageEditText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Type something..."-->
+<!--                android:textColor="@color/white"-->
+<!--                />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/photo_camera"-->
+<!--                app:tint="@color/white"-->
+<!--                android:layout_marginLeft="50dp"-->
+<!--                />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/mic"-->
+<!--                app:tint="@color/white"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/send"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/send_icon"-->
+<!--                app:tint="@color/white"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                />-->
+
+
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+
+<!--    -->
+
+
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="10dp"
-                android:paddingTop="20dp"
+                android:id="@+id/chatBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_edittext_background"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_margin="10dp"
+                android:paddingTop="15dp"
+                android:layout_above="@+id/nav_bar"
                 >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/attach_file"
+                    app:tint="@color/white"
+                    />
 
-                <TextView
+
+                <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:text="How can I help you?"
-                    android:background="@drawable/home_mentor_bg"
-                    android:backgroundTint="@color/white"
-                    android:padding="5dp"
-                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/attach_photo"
+                    app:tint="@color/white"
+                    />
+                <EditText
+                    android:id="@+id/messageEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Type something..."
+                    android:textColor="@color/white"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/photo_camera"
+                    app:tint="@color/white"
+                    android:layout_marginLeft="50dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mic"
+                    app:tint="@color/white"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     />
-                <TextView
+                <ImageView
+                    android:id="@+id/send"
                     android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:text="10:33"
-                    android:textSize="12sp"
-                    android:padding="2dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="10dp"
-                    android:textColor="@color/colorIconSecondary"
-                    android:layout_gravity="left"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/send_icon"
+                    app:tint="@color/white"
+                    android:layout_marginLeft="5dp"
                     />
+
 
 
             </LinearLayout>
-
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal"
-            android:background="@drawable/rounded_edittext_background"
-            android:backgroundTint="@color/colorPrimary"
-            android:layout_margin="10dp"
-            android:paddingTop="15dp"
-            >
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/attach_file"
-                app:tint="@color/white"
-                />
-
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/attach_photo"
-                app:tint="@color/white"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Type something..."
-                android:textColor="@color/white"
-                />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/photo_camera"
-                app:tint="@color/white"
-                android:layout_marginLeft="100dp"
-                />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/mic"
-                app:tint="@color/white"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/send_icon"
-                app:tint="@color/white"
-                />
-
-
-
-        </LinearLayout>
-
-    </LinearLayout>
-
 
     <LinearLayout
         android:id="@+id/nav_bar"
@@ -373,5 +451,6 @@
         android:layout_marginBottom="40dp"
         android:layout_centerInParent="true"
         />
+
 
 </RelativeLayout>
