@@ -167,211 +167,221 @@
         android:layout_alignBaseline="@+id/top_mentor_text"
         />
 
-
-    <RelativeLayout
-        android:id="@+id/john_layout"
-        android:layout_width="180dp"
-        android:layout_height="150dp"
-        android:layout_below="@id/top_mentor_text"
-        android:background="@drawable/home_mentor_bg"
-        android:backgroundTint="@color/colorIconSecondary"
-        >
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/home_mentor_bg"
-            android:backgroundTint="@color/white">
-
-            <TextView
-                android:id="@+id/john_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="John Cooper"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/john_session_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:padding="2dp"
-                android:text="$1500/session"
-                android:textColor="#DCC609" />
-
-            <TextView
-                android:id="@+id/ux_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/john_text"
-                android:padding="2dp"
-                android:text="Ux Designer @ Google" />
-
-            <ImageView
-                android:id="@+id/john_dot"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/ux_text"
-                android:src="@drawable/available_dot" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="20dp"
-                android:text="Available"
-                android:textColor="@color/colorPrimaryDark" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/john_session_text"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="5dp"
-                android:text=" \u2764\uFE0F" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/top_mentor_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_mentor_text"
+        />
 
 
-        </RelativeLayout>
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/john_layout"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_below="@id/top_mentor_text"-->
+<!--        android:background="@drawable/home_mentor_bg"-->
+<!--        android:backgroundTint="@color/colorIconSecondary"-->
+<!--        >-->
 
-    </RelativeLayout>
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:background="@drawable/home_mentor_bg"-->
+<!--            android:backgroundTint="@color/white">-->
 
+<!--            <TextView-->
+<!--                android:id="@+id/john_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="John Cooper"-->
+<!--                android:textStyle="bold" />-->
 
+<!--            <TextView-->
+<!--                android:id="@+id/john_session_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="$1500/session"-->
+<!--                android:textColor="#DCC609" />-->
 
-    <RelativeLayout
-        android:id="@+id/martina_layout"
-        android:layout_width="180dp"
-        android:layout_height="150dp"
-        android:layout_toRightOf="@+id/john_layout"
-        android:layout_alignBaseline="@+id/john_layout"
-        android:background="@drawable/home_mentor_bg"
-        android:backgroundTint="@color/colorIconSecondary"
-        >
+<!--            <TextView-->
+<!--                android:id="@+id/ux_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/john_text"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="Ux Designer @ Google" />-->
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/home_mentor_bg"
-            android:backgroundTint="@color/white">
+<!--            <ImageView-->
+<!--                android:id="@+id/john_dot"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/ux_text"-->
+<!--                android:src="@drawable/available_dot" />-->
 
-            <TextView
-                android:id="@+id/martina_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="Martina Watson"
-                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:text="Available"-->
+<!--                android:textColor="@color/colorPrimaryDark" />-->
 
-            <TextView
-                android:id="@+id/martina_session_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:padding="2dp"
-                android:text="$1500/session"
-                android:textColor="#DCC609" />
-
-            <TextView
-                android:id="@+id/lead_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/martina_text"
-                android:padding="2dp"
-                android:text="Lead - Technology officer" />
-
-            <ImageView
-                android:id="@+id/martina_dot"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/lead_text"
-                android:src="@drawable/available_dot" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="20dp"
-                android:text="Available"
-                android:textColor="@color/colorPrimaryDark" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/martina_session_text"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="5dp"
-                android:text=" \u2764\uFE0F" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/john_session_text"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:text=" \u2764\uFE0F" />-->
 
 
-        </RelativeLayout>
+<!--        </RelativeLayout>-->
 
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:id="@+id/emma_layout"
-        android:layout_width="180dp"
-        android:layout_height="150dp"
-        android:layout_toRightOf="@+id/martina_layout"
-        android:layout_alignBaseline="@+id/john_layout"
-        android:background="@drawable/home_mentor_bg"
-        android:backgroundTint="@color/colorIconSecondary"
-        >
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/home_mentor_bg"
-            android:backgroundTint="@color/white">
-
-            <TextView
-                android:id="@+id/emma_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="Emma"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/Emma_session_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:padding="2dp"
-                android:text="$1500/session"
-                android:textColor="#DCC609" />
-
-            <TextView
-                android:id="@+id/emma_lead_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/emma_text"
-                android:padding="2dp"
-                android:text="Lead - Technology officer" />
-
-            <ImageView
-                android:id="@+id/emma_dot"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/emma_lead_text"
-                android:src="@drawable/available_dot" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="20dp"
-                android:text="Available"
-                android:textColor="@color/colorPrimaryDark" />
+<!--    </RelativeLayout>-->
 
 
 
-        </RelativeLayout>
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/martina_layout"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_toRightOf="@+id/john_layout"-->
+<!--        android:layout_alignBaseline="@+id/john_layout"-->
+<!--        android:background="@drawable/home_mentor_bg"-->
+<!--        android:backgroundTint="@color/colorIconSecondary"-->
+<!--        >-->
 
-    </RelativeLayout>
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:background="@drawable/home_mentor_bg"-->
+<!--            android:backgroundTint="@color/white">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/martina_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="Martina Watson"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/martina_session_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="$1500/session"-->
+<!--                android:textColor="#DCC609" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/lead_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/martina_text"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="Lead - Technology officer" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/martina_dot"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/lead_text"-->
+<!--                android:src="@drawable/available_dot" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:text="Available"-->
+<!--                android:textColor="@color/colorPrimaryDark" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/martina_session_text"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:text=" \u2764\uFE0F" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </RelativeLayout>-->
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/emma_layout"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_toRightOf="@+id/martina_layout"-->
+<!--        android:layout_alignBaseline="@+id/john_layout"-->
+<!--        android:background="@drawable/home_mentor_bg"-->
+<!--        android:backgroundTint="@color/colorIconSecondary"-->
+<!--        >-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:background="@drawable/home_mentor_bg"-->
+<!--            android:backgroundTint="@color/white">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/emma_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="Emma"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/Emma_session_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="$1500/session"-->
+<!--                android:textColor="#DCC609" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/emma_lead_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/emma_text"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="Lead - Technology officer" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/emma_dot"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/emma_lead_text"-->
+<!--                android:src="@drawable/available_dot" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:text="Available"-->
+<!--                android:textColor="@color/colorPrimaryDark" />-->
+
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </RelativeLayout>-->
+
+
+
 
     <TextView
         android:id="@+id/edu_mentor_text"
@@ -399,202 +409,202 @@
         android:gravity="right"
         />
 
-    <RelativeLayout
-        android:id="@+id/michael_layout"
-        android:layout_width="180dp"
-        android:layout_height="150dp"
-        android:layout_below="@id/edu_mentor_text"
-        android:background="@drawable/home_mentor_bg"
-        android:backgroundTint="@color/colorIconSecondary"
-        >
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/michael_layout"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_below="@id/edu_mentor_text"-->
+<!--        android:background="@drawable/home_mentor_bg"-->
+<!--        android:backgroundTint="@color/colorIconSecondary"-->
+<!--        >-->
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/home_mentor_bg"
-            android:backgroundTint="@color/white">
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:background="@drawable/home_mentor_bg"-->
+<!--            android:backgroundTint="@color/white">-->
 
-            <TextView
-                android:id="@+id/michael_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="Michael Drake"
-                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:id="@+id/michael_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="Michael Drake"-->
+<!--                android:textStyle="bold" />-->
 
-            <TextView
-                android:id="@+id/michael_session_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:padding="2dp"
-                android:text="$900/session"
-                android:textColor="#DCC609" />
+<!--            <TextView-->
+<!--                android:id="@+id/michael_session_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="$900/session"-->
+<!--                android:textColor="#DCC609" />-->
 
-            <TextView
-                android:id="@+id/nlp_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/michael_text"
-                android:padding="2dp"
-                android:text="NLP Expert" />
+<!--            <TextView-->
+<!--                android:id="@+id/nlp_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/michael_text"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="NLP Expert" />-->
 
-            <ImageView
-                android:id="@+id/michael_dot"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/nlp_text"
-                android:src="@drawable/available_dot" />
+<!--            <ImageView-->
+<!--                android:id="@+id/michael_dot"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/nlp_text"-->
+<!--                android:src="@drawable/available_dot" />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="20dp"
-                android:text="Available"
-                android:textColor="@color/colorPrimaryDark" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:text="Available"-->
+<!--                android:textColor="@color/colorPrimaryDark" />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/michael_session_text"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="5dp"
-                android:text=" \u2764\uFE0F" />
-
-
-        </RelativeLayout>
-
-    </RelativeLayout>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/michael_session_text"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:text=" \u2764\uFE0F" />-->
 
 
-    <RelativeLayout
-        android:id="@+id/alex_layout"
-        android:layout_width="180dp"
-        android:layout_height="150dp"
-        android:layout_toRightOf="@+id/michael_layout"
-        android:layout_alignBaseline="@+id/michael_layout"
-        android:background="@drawable/home_mentor_bg"
-        android:backgroundTint="@color/colorIconSecondary"
-        >
+<!--        </RelativeLayout>-->
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/home_mentor_bg"
-            android:backgroundTint="@color/white">
-
-            <TextView
-                android:id="@+id/alex_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="Alex"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/alex_session_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:padding="2dp"
-                android:text="$200/session"
-                android:textColor="#DCC609" />
-
-            <TextView
-                android:id="@+id/and_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/alex_text"
-                android:padding="2dp"
-                android:text="Andriod Developer"
-                />
-
-            <ImageView
-                android:id="@+id/alex_dot"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/and_text"
-                android:src="@drawable/available_dot" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="20dp"
-                android:text="Not Available"
-                android:textColor="@color/colorPrimaryDark" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/alex_session_text"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="5dp"
-                android:text=" \u2764\uFE0F" />
+<!--    </RelativeLayout>-->
 
 
-        </RelativeLayout>
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/alex_layout"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_toRightOf="@+id/michael_layout"-->
+<!--        android:layout_alignBaseline="@+id/michael_layout"-->
+<!--        android:background="@drawable/home_mentor_bg"-->
+<!--        android:backgroundTint="@color/colorIconSecondary"-->
+<!--        >-->
 
-    </RelativeLayout>
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:background="@drawable/home_mentor_bg"-->
+<!--            android:backgroundTint="@color/white">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/alex_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="Alex"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/alex_session_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="$200/session"-->
+<!--                android:textColor="#DCC609" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/and_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/alex_text"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="Andriod Developer"-->
+<!--                />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/alex_dot"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/and_text"-->
+<!--                android:src="@drawable/available_dot" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:text="Not Available"-->
+<!--                android:textColor="@color/colorPrimaryDark" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/alex_session_text"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:text=" \u2764\uFE0F" />-->
 
 
-    <RelativeLayout
-        android:id="@+id/jane_layout"
-        android:layout_width="180dp"
-        android:layout_height="150dp"
-        android:layout_toRightOf="@+id/alex_layout"
-        android:layout_alignBaseline="@+id/michael_layout"
-        android:background="@drawable/home_mentor_bg"
-        android:backgroundTint="@color/colorIconSecondary"
-        >
+<!--        </RelativeLayout>-->
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/home_mentor_bg"
-            android:backgroundTint="@color/white">
-
-            <TextView
-                android:id="@+id/jane_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="Jane"
-                android:textStyle="bold" />
+<!--    </RelativeLayout>-->
 
 
-            <TextView
-                android:id="@+id/soft_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/jane_text"
-                android:padding="2dp"
-                android:text="Software Engineer"
-                />
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/jane_layout"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_toRightOf="@+id/alex_layout"-->
+<!--        android:layout_alignBaseline="@+id/michael_layout"-->
+<!--        android:background="@drawable/home_mentor_bg"-->
+<!--        android:backgroundTint="@color/colorIconSecondary"-->
+<!--        >-->
 
-            <ImageView
-                android:id="@+id/jane_dot"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/soft_text"
-                android:src="@drawable/available_dot" />
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:background="@drawable/home_mentor_bg"-->
+<!--            android:backgroundTint="@color/white">-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="20dp"
-                android:text="Not Available"
-                android:textColor="@color/colorPrimaryDark" />
+<!--            <TextView-->
+<!--                android:id="@+id/jane_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="Jane"-->
+<!--                android:textStyle="bold" />-->
 
 
-        </RelativeLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/soft_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/jane_text"-->
+<!--                android:padding="2dp"-->
+<!--                android:text="Software Engineer"-->
+<!--                />-->
 
-    </RelativeLayout>
+<!--            <ImageView-->
+<!--                android:id="@+id/jane_dot"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/soft_text"-->
+<!--                android:src="@drawable/available_dot" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:text="Not Available"-->
+<!--                android:textColor="@color/colorPrimaryDark" />-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </RelativeLayout>-->
 
     <TextView
         android:id="@+id/recent_mentor_text"
@@ -605,7 +615,7 @@
         android:layout_marginLeft="20dp"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:layout_below="@+id/michael_layout"
+        android:layout_below="@+id/top_mentor_rv"
         />
 
     <TextView
@@ -622,37 +632,38 @@
         android:gravity="right"
         />
 
-    <RelativeLayout
-        android:layout_marginTop="5dp"
-        android:id="@+id/blank_layout_1"
-        android:layout_width="180dp"
-        android:layout_height="150dp"
-        android:layout_below="@id/recent_mentor_text"
-        android:background="@drawable/home_mentor_bg"
-        android:backgroundTint="@color/colorIconSecondary"
-        />
+<!--    <RelativeLayout-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:id="@+id/blank_layout_1"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_below="@id/recent_mentor_text"-->
+<!--        android:background="@drawable/home_mentor_bg"-->
+<!--        android:backgroundTint="@color/colorIconSecondary"-->
+<!--        />-->
 
-    <RelativeLayout
+<!--    <RelativeLayout-->
 
-        android:id="@+id/blank_layout_2"
-        android:layout_width="180dp"
-        android:layout_height="150dp"
-        android:layout_below="@+id/recent_mentor_text"
-        android:layout_toRightOf="@+id/blank_layout_1"
-        android:background="@drawable/home_mentor_bg"
-        android:backgroundTint="@color/colorIconSecondary"
-        />
+<!--        android:id="@+id/blank_layout_2"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_below="@+id/recent_mentor_text"-->
+<!--        android:layout_toRightOf="@+id/blank_layout_1"-->
+<!--        android:background="@drawable/home_mentor_bg"-->
+<!--        android:backgroundTint="@color/colorIconSecondary"-->
+<!--        />-->
 
-    <RelativeLayout
+<!--    <RelativeLayout-->
 
-        android:id="@+id/blank_layout_3"
-        android:layout_width="180dp"
-        android:layout_height="150dp"
-        android:layout_below="@+id/recent_mentor_text"
-        android:layout_toRightOf="@+id/blank_layout_2"
-        android:background="@drawable/home_mentor_bg"
-        android:backgroundTint="@color/colorIconSecondary"
-        />
+<!--        android:id="@+id/blank_layout_3"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_below="@+id/recent_mentor_text"-->
+<!--        android:layout_toRightOf="@+id/blank_layout_2"-->
+<!--        android:background="@drawable/home_mentor_bg"-->
+<!--        android:backgroundTint="@color/colorIconSecondary"-->
+<!--        />-->
+<!--    -->
 
     <LinearLayout
         android:id="@+id/nav_bar"

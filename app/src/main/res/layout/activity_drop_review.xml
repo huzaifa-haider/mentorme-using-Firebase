@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".dropReview"
     android:background="#C1E2F1"
-
     >
 
     <LinearLayout
@@ -28,6 +27,7 @@
             android:layout_marginLeft="20dp"
             />
         <TextView
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="John Cooper"
@@ -80,11 +80,11 @@
         app:tint="@color/colorPrimaryDark"
         />
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/john_image"
+        android:id="@+id/profile_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/john"
-        app:civ_border_width="10dp"
+        app:civ_border_width="5dp"
         app:civ_border_color="@color/colorPrimary"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="80dp"
@@ -120,30 +120,35 @@
             android:gravity="center"
             >
             <ImageView
+                android:id="@+id/star1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/star_border"
                 />
 
             <ImageView
+                android:id="@+id/star2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/star_border"
                 />
 
             <ImageView
+                android:id="@+id/star3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/star_border"
                 />
 
             <ImageView
+                android:id="@+id/star4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/star_border"
                 />
 
             <ImageView
+                android:id="@+id/star5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/star_border"
@@ -157,7 +162,7 @@
             android:id="@+id/submit_feed"
             android:layout_width="350dp"
             android:layout_height="80dp"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="80dp"
             android:background="@drawable/rounded_edittext_background"
             android:backgroundTint="@color/colorPrimaryDark"
             android:text="Submit Feedback"

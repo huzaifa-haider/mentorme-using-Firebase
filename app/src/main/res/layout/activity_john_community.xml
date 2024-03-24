@@ -12,11 +12,11 @@
     <LinearLayout
         android:id="@+id/top_layout"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="210dp"
         android:backgroundTint="#44A1AE"
         android:background="@drawable/bottom_corner_bg"
         android:orientation="vertical"
-        android:paddingTop="40dp"
+        android:paddingTop="20dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,6 +37,7 @@
 
 
         <ImageView
+            android:id="@+id/voice_call"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/call"
@@ -46,6 +47,7 @@
 
             />
         <ImageView
+            android:id="@+id/video_call"
             android:layout_marginTop="10dp"
             android:layout_width="30dp"
             android:layout_height="30dp"
@@ -58,10 +60,11 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="John Cooper's"
-            android:textSize="40dp"
+            android:textSize="30dp"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textAlignment="center"
@@ -78,6 +81,7 @@
             />
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/john"
@@ -261,64 +265,126 @@
 
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal"
-            android:background="@drawable/rounded_edittext_background"
-            android:backgroundTint="@color/colorPrimary"
-            android:layout_marginTop="35dp"
-            android:layout_marginRight="10dp"
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:background="@drawable/rounded_edittext_background"-->
+<!--            android:backgroundTint="@color/colorPrimary"-->
+<!--            android:layout_marginTop="35dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:paddingTop="15dp"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/attach_file"-->
+<!--                app:tint="@color/white"-->
+<!--                />-->
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/attach_photo"-->
+<!--                app:tint="@color/white"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Type something..."-->
+<!--                android:textColor="@color/white"-->
+<!--                />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/photo_camera"-->
+<!--                app:tint="@color/white"-->
+<!--                android:layout_marginLeft="100dp"-->
+<!--                />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/mic"-->
+<!--                app:tint="@color/white"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                />-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/send_icon"-->
+<!--                app:tint="@color/white"-->
+<!--                />-->
+
+
+
+<!--        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chatBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext_background"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:paddingTop="15dp"
+        android:layout_above="@+id/nav_bar"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/attach_file"
+            app:tint="@color/white"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/attach_photo"
+            app:tint="@color/white"
+            />
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Type something..."
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/photo_camera"
+            app:tint="@color/white"
+            android:layout_marginLeft="50dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mic"
+            app:tint="@color/white"
             android:layout_marginLeft="10dp"
-            android:paddingTop="15dp"
-            >
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/attach_file"
-                app:tint="@color/white"
-                />
+            android:layout_marginRight="10dp"
+            />
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send_icon"
+            app:tint="@color/white"
+            android:layout_marginLeft="5dp"
+            />
 
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/attach_photo"
-                app:tint="@color/white"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Type something..."
-                android:textColor="@color/white"
-                />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/photo_camera"
-                app:tint="@color/white"
-                android:layout_marginLeft="100dp"
-                />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/mic"
-                app:tint="@color/white"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/send_icon"
-                app:tint="@color/white"
-                />
-
-
-
-        </LinearLayout>
 
 
     </LinearLayout>

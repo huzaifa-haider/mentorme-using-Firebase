@@ -6,16 +6,14 @@
     android:id="@+id/message_row_layout"
     android:paddingTop="5dp"
     >
-
-
     <TextView
         android:id="@+id/message_tv"
         android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:text="I need your guidance"
-        android:background="@drawable/home_mentor_bg"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:background="@drawable/btn_background"
         android:backgroundTint="@color/colorPrimary"
-        android:padding="5dp"
+        android:padding="10dp"
         android:layout_marginRight="10dp"
         android:layout_gravity="right"
         />
@@ -23,7 +21,7 @@
         android:id="@+id/time_tv"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:text="10:30"
+        android:text=""
         android:textSize="12sp"
         android:padding="2dp"
         android:layout_marginTop="5dp"
@@ -31,6 +29,60 @@
         android:textColor="@color/colorIconSecondary"
         android:layout_gravity="right"
         />
+
+    <TextView
+        android:id="@+id/received_message_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:background="@drawable/btn_background"
+        android:backgroundTint="@color/white"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="left"
+        />
+    <TextView
+        android:id="@+id/received_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text=""
+        android:textSize="12sp"
+        android:padding="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorIconSecondary"
+        android:layout_gravity="left"
+        />
+    <ImageView
+        android:id="@+id/received_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/sent_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginRight="10dp"
+
+        />
+    <VideoView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/received_video"
+        android:layout_gravity="left"
+        />
+    <VideoView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sent_video"
+        android:layout_gravity="right"
+        />
+
+
 
 
 

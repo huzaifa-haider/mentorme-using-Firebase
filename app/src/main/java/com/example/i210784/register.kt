@@ -36,7 +36,9 @@ class register : AppCompatActivity() {
                 .addOnSuccessListener{
                     val currentUserId = myAuth.currentUser?.uid
 
-                    var model=Model(currentUserId.toString(),name.text.toString(),email.text.toString(),contact.text.toString(),country.text.toString(),city.text.toString(),"")
+                    var model=Model(currentUserId.toString(),name.text.toString(),email.text.toString(),contact.text.toString(),
+                        country.text.toString(),city.text.toString(),"","","","",0F,
+                        "","","",false)
                     var db= Firebase.database.getReference("userInfo")
                     db.push().setValue(model)
                         //db.setValue(model)

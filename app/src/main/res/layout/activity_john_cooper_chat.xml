@@ -29,6 +29,7 @@
 
 
         <TextView
+                android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="John Cooper"
@@ -37,23 +38,34 @@
                 android:layout_marginLeft="20dp"
                 android:textStyle="bold"
                 />
-
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            >
             <ImageView
+                android:id="@+id/voice_call"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/call"
-                android:layout_marginLeft="50dp"
                 app:tint="@color/white"
                 android:layout_marginTop="10dp"
                 />
             <ImageView
+                android:id="@+id/video_call"
                 android:layout_marginTop="10dp"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/camera"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="50dp"
                 app:tint="@color/white"
                 />
+
+        </RelativeLayout>
+
+
+
 
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
@@ -290,11 +302,12 @@
                 android:orientation="horizontal"
                 android:background="@drawable/rounded_edittext_background"
                 android:backgroundTint="@color/colorPrimary"
-                android:layout_margin="10dp"
+                android:layout_margin="5dp"
                 android:paddingTop="15dp"
                 android:layout_above="@+id/nav_bar"
                 >
                 <ImageView
+                    android:id="@+id/attach_file"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/attach_file"
@@ -303,17 +316,20 @@
 
 
                 <ImageView
+                    android:id="@+id/attach_photo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/attach_photo"
                     app:tint="@color/white"
+                    android:layout_marginLeft="10dp"
                     />
                 <EditText
                     android:id="@+id/messageEditText"
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:hint="Type something..."
                     android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
                     />
 
                 <ImageView
@@ -325,6 +341,7 @@
                     />
 
                 <ImageView
+                    android:id="@+id/voice_note"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/mic"
@@ -332,6 +349,10 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     />
+
+
+
+
                 <ImageView
                     android:id="@+id/send"
                     android:layout_width="wrap_content"

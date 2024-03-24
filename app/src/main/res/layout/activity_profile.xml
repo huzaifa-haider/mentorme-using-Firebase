@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".profile"
+    android:background="#C1E2F1"
     >
 
     <LinearLayout
@@ -49,17 +50,19 @@
 
     <ImageView
         android:layout_below="@+id/first_layout"
-        android:id="@+id/image_frame"
+        android:id="@+id/dp_cover_frame"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:src="@drawable/img_frame"
+        android:layout_marginTop="10dp"
+
         />
     <LinearLayout
         android:id="@+id/second_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_alignBottom="@+id/image_frame"
+        android:layout_alignBottom="@+id/dp_cover_frame"
         >
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -72,17 +75,17 @@
             app:civ_border_width="5dp"
             app:civ_circle_background_color="@color/black"
             />
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/edit_profile"
-            android:layout_width="40dp"
+            android:layout_width="35dp"
             android:layout_height="40dp"
-            android:src="@drawable/edit_profile_icon"
-            android:layout_marginTop="60dp"
             android:layout_marginLeft="-30dp"
-            app:civ_border_width="10dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/edit_profile_icon"
             app:civ_border_color="@color/colorPrimaryDark"
-            app:civ_circle_background_color="@color/colorPrimaryDark"
-            />
+            app:civ_border_width="10dp"
+            app:civ_circle_background_color="@color/colorPrimaryDark" />
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/edit_dp_cover"
             android:layout_width="40dp"

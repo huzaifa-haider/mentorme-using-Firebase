@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".edit_profile">
+    tools:context=".edit_profile"
+    android:background="#C1E2F1"
+    >
 
 
     <LinearLayout

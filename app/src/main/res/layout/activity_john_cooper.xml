@@ -26,6 +26,7 @@
             android:layout_marginLeft="20dp"
             />
         <TextView
+            android:id="@+id/name_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="John Cooper"
@@ -43,6 +44,7 @@
             />
 
         <TextView
+            android:id="@+id/job_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="UX Designer at"
@@ -52,6 +54,7 @@
             android:layout_marginLeft="20dp"
             />
         <TextView
+            android:id="@+id/company_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Google"
@@ -77,6 +80,7 @@
             android:layout_marginLeft="20dp"
             />
         <TextView
+            android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="I am a passionate UX designer at Google with a focus on
@@ -104,11 +108,11 @@ principles and user experience."
         app:tint="@color/colorPrimaryDark"
         />
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/john_image"
+        android:id="@+id/profile_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/john"
-        app:civ_border_width="10dp"
+        app:civ_border_width="5dp"
         app:civ_border_color="@color/colorPrimary"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="80dp"
@@ -120,11 +124,12 @@ principles and user experience."
         android:layout_height="wrap_content"
         android:src="@drawable/star"
         app:tint="#FFEB3B"
-        android:layout_below="@+id/john_image"
+        android:layout_below="@+id/profile_image"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="70dp"
         android:layout_marginTop="50dp"/>
 <TextView
+    android:id="@+id/rating"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="4.8"
@@ -134,7 +139,7 @@ principles and user experience."
     android:layout_alignParentEnd="true"
     android:layout_marginRight="35dp"
     android:layout_marginTop="50dp"
-    android:layout_below="@+id/john_image"
+    android:layout_below="@+id/profile_image"
     />
 <LinearLayout
 

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/mentor_col_layout"
+    android:paddingTop="5dp"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/john_layout"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/top_mentor_text"
+        android:background="@drawable/home_mentor_bg"
+        android:backgroundTint="@color/colorIconSecondary"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/home_mentor_bg"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="John Cooper"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/session_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="2dp"
+                android:text="$1500/session"
+                android:textColor="#DCC609"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_tv"
+                android:padding="2dp"
+                android:text="Ux Designer" />
+            <TextView
+                android:id="@+id/company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" @ Google"
+                android:layout_toRightOf="@id/job"
+                android:layout_below="@id/name_tv"
+                />
+
+            <ImageView
+                android:id="@+id/avaiable_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/job"
+                android:src="@drawable/available_dot" />
+
+            <TextView
+                android:id="@+id/avaible_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/avaiable_icon"
+                android:layout_below="@+id/job"
+                android:layout_marginLeft="20dp"
+                android:text="Available"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:id="@+id/avaible_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/favorite_icon"
+                android:layout_below="@id/session_price"
+                app:tint="#F44336"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="5dp"
+                android:text=" \u2764\uFE0F" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

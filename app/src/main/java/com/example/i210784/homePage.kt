@@ -1,22 +1,27 @@
 package com.example.i210784
 
+import com.example.i210784.Model
+import com.example.i210784.mentorAdapter
+import com.example.i210784.profile
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.i210784.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.database
-import com.google.firebase.database.ktx.database
-import com.google.firebase.ktx.Firebase
 
 class homePage : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)
@@ -28,6 +33,7 @@ class homePage : AppCompatActivity() {
         var name=findViewById<TextView>(R.id.name_tv)
         var myProfile=findViewById<ImageView>(R.id.profile_icon)
         var logout=findViewById<Button>(R.id.logout)
+        var top_mentor_rv=findViewById<RecyclerView>(R.id.top_mentor_rv)
 
 
 
@@ -58,6 +64,33 @@ class homePage : AppCompatActivity() {
             })
         }
 
+        val myArr=ArrayList<Model>()
+        var db= com.google.firebase.Firebase.database.getReference("userInfo")
+        db.addChildEventListener(object : com.google.firebase.database.ChildEventListener{
+            override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
+                var model=snapshot.getValue(Model::class.java)
+                myArr.add(model!!)
+                val adapter= mentorAdapter(myArr,this@homePage)
+                top_mentor_rv.layoutManager= LinearLayoutManager(this@homePage, LinearLayoutManager.HORIZONTAL, false)
+                top_mentor_rv.adapter=adapter
+            }
+
+            override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {
+
+            }
+
+            override fun onChildRemoved(snapshot: DataSnapshot) {
+
+            }
+
+            override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?) {
+
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+
+            }
+        })
 
 
         logout.setOnClickListener {

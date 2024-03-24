@@ -11,5 +11,6 @@
     <color name="colorPrimaryLite">#B0EAF3</color>
     <color name="colorIconSecondary">#9DA1A1</color>
     <color name="colorBackground">#C1E2F1</color>
+    <color name="yellow">#FFEB3B</color>
 
 </resources>

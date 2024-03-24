@@ -7,5 +7,8 @@ class video_call : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_video_call)
+        var userId=intent.getStringExtra("userID")
+
+
     }
 }

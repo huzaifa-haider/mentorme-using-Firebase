@@ -16,6 +16,7 @@
         android:orientation="vertical"
         >
         <TextView
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="John Cooper"
@@ -32,6 +33,7 @@
             android:layout_marginLeft="20dp"
             >
             <TextView
+                android:id="@+id/rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="4.8"
@@ -67,6 +69,7 @@
 
             >
             <TextView
+                android:id="@+id/price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$1500/session"
@@ -75,18 +78,21 @@
                 android:layout_marginLeft="20dp"
                 />
             <ImageView
+                android:id="@+id/chat"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/chat_yello_icon"
                 android:layout_marginLeft="100dp"
                 />
             <ImageView
+                android:id="@+id/voice_call"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/call_yellow_icon"
                 android:layout_marginLeft="10dp"
                 />
             <ImageView
+                android:id="@+id/video_call"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/video_icon"
@@ -100,7 +106,7 @@
     </LinearLayout>
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/john_image"
+        android:id="@+id/profile_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/john"
@@ -640,6 +646,7 @@
         >
 
         <TextView
+            android:id="@+id/time1"
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:background="@drawable/rounded_edittext_background"
@@ -650,6 +657,7 @@
             android:textAlignment="center"
             />
         <TextView
+            android:id="@+id/time2"
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:background="@drawable/rounded_edittext_background"
@@ -663,6 +671,7 @@
             />
 
         <TextView
+            android:id="@+id/time3"
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:background="@drawable/rounded_edittext_background"
@@ -691,7 +700,7 @@
             android:paddingTop="15dp"
             android:layout_marginLeft="10dp"
             android:textAlignment="center"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="10dp"
             android:layout_gravity="center"
             />
 

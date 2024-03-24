@@ -34,9 +34,11 @@
             android:textAlignment="center"
             />
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="match_parent"
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/john"
+            android:layout_gravity="center"
             />
 
     </LinearLayout>
